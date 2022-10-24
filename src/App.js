@@ -6,6 +6,12 @@ const bgImageStyles = css`
   position: absolute;
   width: 375px;
   height: 192px;
+
+  @media (min-width: 375px) {
+    background: url(/bg-desktop.svg);
+    width: 1440px;
+    height: 437px;
+  } ;
 `;
 
 const cardStyles = css`
@@ -20,11 +26,26 @@ const cardStyles = css`
   box-shadow: 0px 10px 10px rgba(114, 128, 167, 0.25);
   border-radius: 20px;
 
+  @media (min-width: 375px) {
+    position: absolute;
+    left: 34.38%;
+    right: 34.38%;
+    top: 21.39%;
+    bottom: 10.64%;
+    width: 450px;
+    height: 696px;
+  }
+
   img {
     position: relative;
     width: 327px;
     height: 160px;
     border-radius: 20px 20px 0px 0px;
+
+    @media (min-width: 375px) {
+      width: 450px;
+      height: 220px;
+    }
   }
 
   h1 {
@@ -35,6 +56,11 @@ const cardStyles = css`
     top: 164px;
     font-size: 24px;
     color: #1f2f56;
+
+    @media (min-width: 375px) {
+      left: 123px;
+      top: 266px;
+    }
   }
 
   p {
@@ -44,6 +70,11 @@ const cardStyles = css`
     left: 24px;
     top: 220px;
     text-align: center;
+
+    @media (min-width: 375px) {
+      left: 78px;
+      top: 319px;
+    }
   }
 `;
 
@@ -56,6 +87,13 @@ const annualPlanStyles = css`
   background: #f5f7ff;
   border-radius: 8px;
 
+  @media (min-width: 375px) {
+    left: 48px;
+    top: 432px;
+    width: 354px;
+    height: 80px;
+  }
+
   img {
     position: absolute;
     left: 8.6%;
@@ -64,6 +102,9 @@ const annualPlanStyles = css`
     bottom: 17.5%;
     width: 48px;
     height: 48px;
+
+    @media (min-width: 375px) {
+    }
   }
 
   .plan {
@@ -73,6 +114,9 @@ const annualPlanStyles = css`
     top: 5%;
     bottom: 42.5%;
     color: #1f2f56;
+
+    @media (min-width: 375px) {
+    }
   }
 
   .price {
@@ -84,6 +128,9 @@ const annualPlanStyles = css`
     font-weight: 700;
     font-size: 15px;
     line-height: 150%;
+
+    @media (min-width: 375px) {
+    }
   }
 
   .change {
@@ -98,6 +145,9 @@ const annualPlanStyles = css`
 
     :hover {
       color: #655ae8;
+    }
+
+    @media (min-width: 375px) {
     }
   }
 `;
@@ -121,6 +171,13 @@ const buttonStyles = css`
   :hover {
     background-color: #655ae8;
   }
+
+  @media (min-width: 375px) {
+    width: 354px;
+    height: 48px;
+    top: 559px;
+    left: 48px;
+  } ;
 `;
 
 const cancelStyles = css`
@@ -129,6 +186,11 @@ const cancelStyles = css`
   height: 24px;
   left: 114px;
   top: 514px;
+
+  @media (min-width: 375px) {
+    top: 637px;
+    left: 175px;
+  } ;
 `;
 
 function App() {
